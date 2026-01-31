@@ -574,8 +574,13 @@ class Handler(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    server = HTTPServer(("127.0.0.1", 8000), Handler)
-    print("FDWEBSITE dashboard running at http://127.0.0.1:8000")
+    host = os.environ.get("HOST", "0.0.0.0")
+    try:
+        port = int(os.environ.get("PORT", "8000"))
+    except ValueError:
+        port = 8000
+    server = HTTPServer((host, port), Handler)
+    print(f"FDWEBSITE dashboard running at http://{host}:{port}")
     print("Press Ctrl+C to stop.")
     try:
         server.serve_forever()
