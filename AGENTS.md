@@ -35,3 +35,14 @@
 ## Configuration & Data Updates
 - Environment variables: `HOST` and `PORT` control the server bind settings.
 - CSV uploads in the dashboard update sections by keyword (`living room`, `bedroom`, `dining room`, `recliner`) and write `.bak-<timestamp>` backups next to the modified file.
+
+## Server Environment (wolf.discount)
+- Reverse proxy: nginx system service binding `:80`/`:443`.
+- nginx configs: `/etc/nginx/nginx.conf`, `/etc/nginx/sites-available/wolf.discount`, `/etc/nginx/conf.d/alphapulse.conf`.
+- Public web root: `/srv/www/wolf.discount/` (current live landing page at `/srv/www/wolf.discount/index.html`).
+- Owner dashboard (static): `/srv/www/wolf/owner/` served at `/owner/`.
+- API routes:
+  - `/api/*` -> `127.0.0.1:5055` (alphapulse-pos)
+  - `/api/server/*` -> `127.0.0.1:5056` (wolf-api)
+- Other static routes: `/agents/`, `/showcase/`, `/tf11/`, `/assets/`.
+- Reload after nginx edits: `sudo nginx -t` then `sudo systemctl reload nginx`.
