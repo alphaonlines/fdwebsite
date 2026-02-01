@@ -46,3 +46,12 @@
   - `/api/server/*` -> `127.0.0.1:5056` (wolf-api)
 - Other static routes: `/agents/`, `/showcase/`, `/tf11/`, `/assets/`.
 - Reload after nginx edits: `sudo nginx -t` then `sudo systemctl reload nginx`.
+
+## Recent Changes (2026-01-31)
+- Moved FD public pages to subdomain: https://furnituredistributors.wolf.discount/
+- Added redirects from https://wolf.discount/furnituredistributors/* and /fd/ to the new subdomain.
+- Enabled /fd/ app on the subdomain with /fd/api/* routed to :5057.
+- Added quick-links index page on the subdomain root with a dashboard button.
+- Bedroom page restored with mobile-friendly stacking only (no snow effect).
+- Added CSV upload modal button to FD dashboard (/fd/) gated by dashboard unlock; posts to /fd-upload-csv.
+- Nginx now listens on 0.0.0.0:80/443 and :443/:80 IPv6; SSL issued for subdomain.
