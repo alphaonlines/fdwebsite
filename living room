@@ -32,7 +32,7 @@
               <td valign="top" style="padding-right: 10px;">
                 <div style="color: #6b7280; font-size: 12px;">Includes: 2PC Sectional (Ottoman avaliable)</div>
                 <div style="margin-top: 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                  <div class="ms-nowline" style="font-weight: 900; font-size: 13px; color: #111827;"></div>
+                  <div class="ms-nowline" style="font-weight: 900; font-size: clamp(17px, 4.6vw, 22px); line-height: 1.1; color: #b91c1c;"></div>
                   <div style="color: #374151; font-size: 13px;">Was <span class="ms-regline" style="text-decoration: line-through;"></span></div>
                 </div>
               </td>
@@ -69,7 +69,7 @@
               <td valign="top" style="padding-right: 10px;">
                 <div style="color: #6b7280; font-size: 12px;">Includes: Sofa &amp; Loveseat</div>
                 <div style="margin-top: 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                  <div class="ms-nowline" style="font-weight: 900; font-size: 13px; color: #111827;"></div>
+                  <div class="ms-nowline" style="font-weight: 900; font-size: clamp(17px, 4.6vw, 22px); line-height: 1.1; color: #b91c1c;"></div>
                   <div style="color: #374151; font-size: 13px;">Was <span class="ms-regline" style="text-decoration: line-through;"></span></div>
                 </div>
               </td>
@@ -108,7 +108,7 @@
               <td valign="top" style="padding-right: 10px;">
                 <div style="color: #6b7280; font-size: 12px;">Includes: 6 PC sectional</div>
                 <div style="margin-top: 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                  <div class="ms-nowline" style="font-weight: 900; font-size: 13px; color: #111827;"></div>
+                  <div class="ms-nowline" style="font-weight: 900; font-size: clamp(17px, 4.6vw, 22px); line-height: 1.1; color: #b91c1c;"></div>
                   <div style="color: #374151; font-size: 13px;">Was <span class="ms-regline" style="text-decoration: line-through;"></span></div>
                 </div>
               </td>
@@ -145,7 +145,7 @@
               <td valign="top" style="padding-right: 10px;">
                 <div style="color: #6b7280; font-size: 12px;">Includes: Sofa &amp; Loveseat</div>
                 <div style="margin-top: 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                  <div class="ms-nowline" style="font-weight: 900; font-size: 13px; color: #111827;"></div>
+                  <div class="ms-nowline" style="font-weight: 900; font-size: clamp(17px, 4.6vw, 22px); line-height: 1.1; color: #b91c1c;"></div>
                   <div style="color: #374151; font-size: 13px;">Was <span class="ms-regline" style="text-decoration: line-through;"></span></div>
                 </div>
               </td>
@@ -184,7 +184,7 @@
               <td valign="top" style="padding-right: 10px;">
                 <div style="color: #6b7280; font-size: 12px;">Includes: Sofa, chair, and ottoman (Loveseat avaliable)</div>
                 <div style="margin-top: 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                  <div class="ms-nowline" style="font-weight: 900; font-size: 13px; color: #111827;"></div>
+                  <div class="ms-nowline" style="font-weight: 900; font-size: clamp(17px, 4.6vw, 22px); line-height: 1.1; color: #b91c1c;"></div>
                   <div style="color: #374151; font-size: 13px;">Was <span class="ms-regline" style="text-decoration: line-through;"></span></div>
                 </div>
               </td>
