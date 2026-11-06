@@ -1,0 +1,227 @@
+<div class="wrap"><!-- === COUNTDOWN (Oct 28–Nov 11, Eastern) === -->
+<table width="92%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+<tbody>
+<tr>
+<td align="center" style="padding: 0;">
+<div id="vd-countdown" data-start="2025-10-28T00:00:00-04:00" data-end="2025-11-11T23:59:59-05:00" data-prelabel="Starts in" data-livelabel="Ends in" data-ended-text="The Veterans Day Circular has ended." style="display: block; width: 100%; background: #000; color: #fff; border-radius: 12px; padding: 32px 24px; font-weight: 900; font-size: clamp(42px,7vw,88px); line-height: 1; text-align: center; letter-spacing: .02em; font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;">7 DAYS&nbsp;00:00:00</div>
+<div id="vd-note" style="margin-top: 8px; font-size: 12px; color: #6b7280; text-align: center;">Veterans Day Circular runs 10/28&ndash;11/11 (Eastern)</div>
+<script>
+          (function(){
+            var el = document.getElementById('vd-countdown');
+            if (!el) return;
+            el.setAttribute('role','timer');
+            el.setAttribute('aria-live','polite');
+
+            var start = new Date(el.getAttribute('data-start'));
+            var end   = new Date(el.getAttribute('data-end'));
+            var note  = document.getElementById('vd-note');
+            var preLabel  = el.getAttribute('data-prelabel')  || 'Starts in';
+            var liveLabel = el.getAttribute('data-livelabel') || 'Ends in';
+            var endedTxt  = el.getAttribute('data-ended-text')|| 'Event ended';
+
+            function pad(n){ return (n<10?'0':'')+n; }
+            function fmt(ms){
+              var s = Math.max(0, Math.floor(ms/1000));
+              var d = Math.floor(s/86400);
+              var h = Math.floor((s%86400)/3600);
+              var m = Math.floor((s%3600)/60);
+              var sec = s % 60;
+              return d + ' DAYS\u00A0\u00A0' + pad(h)+':'+pad(m)+':'+pad(sec);
+            }
+
+            function tick(){
+              var now = new Date();
+              if (now < start){
+                el.textContent = fmt(start - now);
+                if (note) note.textContent = 'Countdown to sale start — Veterans Day Circular runs 10/28–11/11 (Eastern)';
+                el.setAttribute('aria-label', preLabel + ' ' + el.textContent);
+                return;
+              }
+              if (now <= end){
+                el.textContent = fmt(end - now);
+                if (note) note.textContent = 'Ends in — Sale ends Nov 11, 2025 (end of day)';
+                el.setAttribute('aria-label', liveLabel + ' ' + el.textContent);
+                return;
+              }
+              el.textContent = endedTxt;
+              if (note) note.textContent = 'Thanks for visiting — watch for our next event!';
+              clearInterval(timer);
+            }
+
+            tick();
+            var timer = setInterval(tick, 1000);
+          })();
+          </script>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- === EVENT STRIP WITH TERMS === -->
+<table width="92%" border="0" cellspacing="0" cellpadding="0" role="presentation" bgcolor="#1a1a1a" style="border: 1px solid #2a2a2a;">
+<tbody>
+<tr>
+<td bgcolor="#d4af37" style="padding: 10px 14px; color: #1a1300; font-weight: 900; text-transform: uppercase; letter-spacing: .06em;">Veterans Day Circular &mdash; 10/28&ndash;11/11</td>
+<td style="padding: 10px 14px; color: #d9e4ff; font-size: 15px; line-height: 1.6;">Honor &amp; save. Event begins October 28 and ends November 11, 2025. All times Eastern.</td>
+</tr>
+</tbody>
+</table>
+<!-- === PROMO IMAGE STRIP (blurred until start; links guarded pre-start) === -->
+<table width="92%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+<tbody><!-- 1) Top banner hero -->
+<tr>
+<td align="center" style="padding: 16px 0;"><a href="/Home/Locations" target="_blank" rel="noopener" data-guard=""> <img data-clear="https://fwaimages.blob.core.windows.net/s36/Veterans%20Day/Screenshot%202025-10-28%20211232.png" alt="Veterans Day SALE banner &mdash; 12 months same as cash" style="width: 100%; height: auto; display: block; border: 0; filter: blur(12px); transition: filter .4s;" /> </a></td>
+</tr>
+<!-- 2) Core offer page -->
+<tr>
+<td align="center" style="padding: 16px 0;"><a href="/Home/Locations" target="_blank" rel="noopener" data-guard=""> <img data-clear="https://fwaimages.blob.core.windows.net/s36/Veterans%20Day/Screenshot%202025-10-28%20210709.png" alt="Veterans Day circular &mdash; page 1 (Get a King for the price of a Queen)" style="width: 100%; height: auto; display: block; border: 0; filter: blur(12px); transition: filter .4s;" /> </a></td>
+</tr>
+<!-- 3) Mid-strip banner repeat -->
+<tr>
+<td align="center" style="padding: 16px 0;"><a href="/Home/Locations" target="_blank" rel="noopener" data-guard=""> <img data-clear="https://fwaimages.blob.core.windows.net/s36/Veterans%20Day/Screenshot%202025-10-28%20211232.png" alt="Veterans Day SALE banner &mdash; mid-strip" style="width: 100%; height: auto; display: block; border: 0; filter: blur(12px); transition: filter .4s;" /> </a></td>
+</tr>
+<!-- 4) Mattresses/bases pricing -->
+<tr>
+<td align="center" style="padding: 16px 0;"><a href="/Home/Locations" target="_blank" rel="noopener" data-guard=""> <img data-clear="https://fwaimages.blob.core.windows.net/s36/Veterans%20Day/Screenshot%202025-10-28%20211005.png" alt="Veterans Day circular &mdash; page 2 (mattresses &amp; bases)" style="width: 100%; height: auto; display: block; border: 0; filter: blur(12px); transition: filter .4s;" /> </a></td>
+</tr>
+<!-- 5) Uniform $100 CTA -->
+<tr>
+<td align="center" style="padding: 16px 0;"><a href="/Home/Locations" target="_blank" rel="noopener" data-guard=""> <img data-clear="https://fwaimages.blob.core.windows.net/s36/Veterans%20Day/Screenshot%202025-10-28%20211059.png" alt="Veterans Day circular &mdash; uniform $100 and adjustable bases" style="width: 100%; height: auto; display: block; border: 0; filter: blur(12px); transition: filter .4s;" /> </a></td>
+</tr>
+<!-- 6) Sofas & recliners -->
+<tr>
+<td align="center" style="padding: 16px 0;"><a href="/Home/Locations" target="_blank" rel="noopener" data-guard=""> <img data-clear="https://fwaimages.blob.core.windows.net/s36/Veterans%20Day/Screenshot%202025-10-28%20211330.png" alt="Veterans Day circular &mdash; sofas &amp; recliners page" style="width: 100%; height: auto; display: block; border: 0; filter: blur(12px); transition: filter .4s;" /> </a></td>
+</tr>
+<!-- 7) Dining (Realyn) -->
+<tr>
+<td align="center" style="padding: 16px 0;"><a href="/Home/Locations" target="_blank" rel="noopener" data-guard=""> <img data-clear="https://fwaimages.blob.core.windows.net/s36/Veterans%20Day/Screenshot%202025-10-28%20211416.png" alt="Veterans Day circular &mdash; Realyn dining room" style="width: 100%; height: auto; display: block; border: 0; filter: blur(12px); transition: filter .4s;" /> </a></td>
+</tr>
+<!-- 8) Dinette & dining sets -->
+<tr>
+<td align="center" style="padding: 16px 0;"><a href="/Home/Locations" target="_blank" rel="noopener" data-guard=""> <img data-clear="https://fwaimages.blob.core.windows.net/s36/Veterans%20Day/Screenshot%202025-10-28%20211613.png" alt="Veterans Day circular &mdash; dinette and dining sets" style="width: 100%; height: auto; display: block; border: 0; filter: blur(12px); transition: filter .4s;" /> </a></td>
+</tr>
+<!-- 9) Closing banner -->
+<tr>
+<td align="center" style="padding: 16px 0;"><a href="/Home/Locations" target="_blank" rel="noopener" data-guard=""> <img data-clear="https://fwaimages.blob.core.windows.net/s36/Veterans%20Day/Screenshot%202025-10-28%20211232.png" alt="Veterans Day SALE banner &mdash; closing reminder" style="width: 100%; height: auto; display: block; border: 0; filter: blur(12px); transition: filter .4s;" /> </a></td>
+</tr>
+</tbody>
+</table>
+<!-- === Image loader + reveal + link guard === -->
+<script>
+  (function(){
+    var start = new Date("2025-10-28T00:00:00-04:00");
+    var imgs  = document.querySelectorAll('img[data-clear]');
+    var links = document.querySelectorAll('a[data-guard]');
+
+    function paint(){
+      for (var i=0;i<imgs.length;i++){
+        var im = imgs[i];
+        if (!im.getAttribute('src')){
+          im.setAttribute('src', im.getAttribute('data-clear')); // load blurred
+        }
+      }
+    }
+    function reveal(){
+      if (new Date() >= start){
+        for (var i=0;i<imgs.length;i++){ imgs[i].style.filter = 'none'; }
+        return true;
+      }
+      return false;
+    }
+    function guard(){
+      var live = (new Date() >= start);
+      for (var i=0;i<links.length;i++){
+        var a = links[i];
+        if (!live){
+          if (!a.getAttribute('data-href') && a.getAttribute('href')){
+            a.setAttribute('data-href', a.getAttribute('href'));
+            a.removeAttribute('href');
+            a.setAttribute('aria-disabled','true');
+            a.style.pointerEvents = 'none';
+          }
+        } else {
+          if (!a.getAttribute('href') && a.getAttribute('data-href')){
+            a.setAttribute('href', a.getAttribute('data-href'));
+            a.removeAttribute('data-href');
+            a.removeAttribute('aria-disabled');
+            a.style.pointerEvents = '';
+          }
+        }
+      }
+    }
+
+    paint();
+    reveal();
+    guard();
+    setInterval(function(){ reveal(); guard(); }, 1000);
+  })();
+  </script>
+<!-- === No-JS fallback (show images) === --><noscript><style>img[data-clear]{filter:none !important}</style></noscript><!-- === FINE PRINT (inline-safe) === -->
+<table width="92%" border="0" cellspacing="0" cellpadding="0" role="presentation" style="margin-top: 8px; background: #0b0b0b; border: 1px solid #222; border-radius: 8px;">
+<tbody>
+<tr>
+<td style="padding: 12px 14px; color: #c7d2fe; font-size: 12px; line-height: 1.5;"><strong style="color: #fff;">Offer Highlights:</strong>
+<div>&bull; <strong>King for the price of Queen</strong> on mattresses, adjustable bases, and beds; applies to all bedding &amp; bedroom groups (even if not pictured).</div>
+<div>&bull; Bedroom sets: ticket must picture a <strong>6-piece minimum</strong> bedroom to receive King-for-Queen; otherwise regular King pricing applies.</div>
+<div>&bull; Prices adjusted the first week of October; <em>do not extend early</em> prior to <strong>Oct 28</strong>.</div>
+<div>&bull; Price match may not be combined with other offers.</div>
+<div>&bull; <strong>$100 Uniform Thank-You:</strong> Take a photo in uniform (with consent) and send with name + ticket #. Applies only toward an <strong>adjustable base with mattress</strong> purchase. Photos may be used on social media; waiver required.</div>
+<div>&bull; <strong>Excludes</strong> Stearns &amp; Foster, Nectar, and Tempur-Pedic brands.</div>
+<div>&bull; &ldquo;Floor-to-the-Door&rdquo; promotion is discontinued for the remainder of the year.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Dialogflow Messenger (bottom-right) -->
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger project-id="fd-chat-bot" agent-id="6707aec4-d617-490a-b7d7-4403121668fe" language-code="en"> <df-messenger-chat-bubble chat-title="FD HELPER" chat-icon="https://fwaimages.blob.core.windows.net/s36/LOGO.jpg"> </df-messenger-chat-bubble> </df-messenger>
+<script>
+  // Hoist to <body> and pin bottom-right (works inside inline editors/site builders)
+  (function(){
+    function pin(){
+      var host = document.querySelector('df-messenger');
+      if (!host) return;
+
+      // Move out of any container that forces left/relative positioning
+      if (host.parentElement !== document.body) document.body.appendChild(host);
+
+      // Pin the host itself
+      Object.assign(host.style, {
+        position: 'fixed',
+        right: '24px',   // <- change to 'left' for bottom-left
+        left: 'auto',
+        bottom: '18px',
+        zIndex: 2147483647,
+        maxWidth: 'none'
+      });
+
+      // Also pin internals inside shadow DOM so it never snaps left
+      var root = host.shadowRoot;
+      if (root) {
+        var style = root.getElementById('df-float-style');
+        if (!style) { style = document.createElement('style'); style.id = 'df-float-style'; root.appendChild(style); }
+        style.textContent = `
+          df-messenger-chat-bubble,
+          df-messenger-chat {
+            position: fixed !important;
+            right: 24px !important;
+            left: auto !important;
+            z-index: 2147483647 !important;
+          }
+          df-messenger-chat-bubble { bottom: 18px !important; }
+          df-messenger-chat        { bottom: 80px !important; }
+        `;
+      }
+    }
+
+    if (window.customElements?.whenDefined) {
+      customElements.whenDefined('df-messenger').then(pin);
+    }
+    window.addEventListener('df-messenger-loaded', pin);
+
+    // Safety net for slow loads (tries for ~8s)
+    var tries = 0, t = setInterval(function(){
+      tries++; pin(); if (tries > 80) clearInterval(t);
+    }, 100);
+  })();
+</script>
