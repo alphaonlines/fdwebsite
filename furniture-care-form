@@ -1,0 +1,124 @@
+<!-- ============== Furniture & Leather Care Acknowledgment (printable, customer signs) ============== -->
+<style>
+  #fd-care-form .fd-line { border-bottom: 1px solid #111827; min-height: 22px; }
+  #fd-care-form .fd-box { display: inline-block; width: 13px; height: 13px; border: 1.5px solid #111827; border-radius: 2px; vertical-align: -2px; margin-right: 6px; }
+  #fd-care-form h3 { margin: 0 0 4px; font-size: 14px; font-weight: 900; letter-spacing: .02em; }
+  #fd-care-form ul { margin: 0; padding-left: 16px; }
+  #fd-care-form li { margin-bottom: 2px; }
+  @media print {
+    @page { size: letter; margin: 0.4in; }
+    body * { visibility: hidden !important; }
+    #fd-care-form, #fd-care-form * { visibility: visible !important; }
+    #fd-care-form { position: absolute; left: 0; top: 0; width: 100%; max-width: none !important; margin: 0 !important; padding: 0 !important; font-size: 11px !important; }
+    #fd-care-form .fd-noprint { display: none !important; }
+    #fd-care-form .fd-card { border-color: #9ca3af !important; break-inside: avoid; }
+  }
+</style>
+<div id="fd-care-form" data-page="furniture-care-form" style="max-width: 820px; margin: 0 auto; padding: 12px; font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height: 1.4; color: #111827; font-size: 13px;">
+
+<!-- Print button (screen only) -->
+<div class="fd-noprint" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 12px; padding: 12px 14px; background: #fffbeb; border: 1px solid #fde68a; border-radius: 12px;">
+<div style="font-size: 14px; color: #374151;">Print this form for the customer to review and sign at pickup or delivery.</div>
+<button type="button" onclick="window.print()" style="background: #b45309; color: #fff; border: 0; border-radius: 8px; padding: 10px 16px; font-weight: 800; font-size: 14px; cursor: pointer;">🖨️ Print Form</button>
+</div>
+
+<!-- Header -->
+<div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; border-bottom: 3px solid #111827; padding-bottom: 8px;">
+<div>
+<div style="font-weight: 900; font-size: 22px; letter-spacing: .02em;">FURNITURE DISTRIBUTORS</div>
+<div style="font-weight: 800; font-size: 15px; color: #b45309;">Furniture &amp; Leather Care Acknowledgment</div>
+</div>
+<div style="text-align: right; font-size: 11px; color: #4b5563;">Customer Service: (252) 320-7430<br />custserv@furnituredistributors.net</div>
+</div>
+
+<!-- Customer info -->
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin-top: 10px;">
+<tbody>
+<tr>
+<td width="60%" style="padding: 4px 8px 4px 0;">Customer Name<div class="fd-line"></div></td>
+<td width="40%" style="padding: 4px 0;">Date<div class="fd-line"></div></td>
+</tr>
+<tr>
+<td style="padding: 4px 8px 4px 0;">Sales Order No.<div class="fd-line"></div></td>
+<td style="padding: 4px 0;">Phone<div class="fd-line"></div></td>
+</tr>
+<tr>
+<td colspan="2" style="padding: 4px 0;">Item(s) Purchased<div class="fd-line"></div></td>
+</tr>
+</tbody>
+</table>
+<div style="margin-top: 6px;"><strong>Material(s):</strong>&nbsp; <span class="fd-box"></span>Fabric / Upholstery &nbsp; <span class="fd-box"></span>Leather &nbsp; <span class="fd-box"></span>Wood / Veneer &nbsp; <span class="fd-box"></span>Other ____________</div>
+
+<!-- Care instructions -->
+<div style="margin-top: 10px; font-weight: 900; font-size: 15px;">Care Instructions</div>
+<div style="color: #4b5563;">Basics for every piece: <strong>blot, don&rsquo;t scrub</strong> &bull; <strong>test cleaners on a hidden spot first</strong> &bull; <strong>keep away from direct sun and heat vents</strong>.</div>
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin-top: 6px;">
+<tbody>
+<tr>
+<td width="34%" valign="top" style="padding: 4px 4px 4px 0;">
+<div class="fd-card" style="border: 1px solid #e5e7eb; border-radius: 8px; padding: 8px;">
+<h3>FABRIC / UPHOLSTERY</h3>
+<div style="font-size: 11px; color: #4b5563; margin-bottom: 4px;">Check the cleaning code on the tag (often under cushions):</div>
+<ul>
+<li><strong>W</strong> &ndash; water-based cleaner only</li>
+<li><strong>S</strong> &ndash; solvent-based only, <strong>no water</strong></li>
+<li><strong>WS / SW</strong> &ndash; water or solvent</li>
+<li><strong>X</strong> &ndash; vacuum / brush only</li>
+<li>Vacuum weekly; rotate cushions if reversible</li>
+<li>Blot spills right away; no bleach or ammonia</li>
+</ul>
+</div>
+</td>
+<td width="33%" valign="top" style="padding: 4px;">
+<div class="fd-card" style="border: 1px solid #e5e7eb; border-radius: 8px; padding: 8px;">
+<h3>LEATHER</h3>
+<ul>
+<li>Dust weekly with a dry microfiber cloth</li>
+<li>Vacuum seams gently with a crevice tool</li>
+<li>Condition every <strong>6&ndash;12 months</strong> to prevent drying and cracking</li>
+<li>Wipe spills immediately with a clean, absorbent cloth</li>
+<li>No soap, harsh detergents, saddle soap or oily cleaners</li>
+<li>Keep 2&ndash;3 ft from heat sources and out of direct sun</li>
+<li>Keep sharp objects off leather</li>
+</ul>
+</div>
+</td>
+<td width="33%" valign="top" style="padding: 4px 0 4px 4px;">
+<div class="fd-card" style="border: 1px solid #e5e7eb; border-radius: 8px; padding: 8px;">
+<h3>WOOD / VENEER</h3>
+<ul>
+<li>Dust with a soft, dry cloth</li>
+<li>Wipe with the grain using a slightly damp cloth, then dry immediately</li>
+<li>Use coasters and placemats to prevent rings and heat marks</li>
+<li>Avoid extreme dryness or dampness; small seasonal movement is normal</li>
+</ul>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<!-- Protection plan -->
+<div class="fd-card" style="margin-top: 8px; border: 1px solid #e5e7eb; border-left: 5px solid #b45309; border-radius: 8px; padding: 8px 10px;">
+<div style="font-weight: 900; font-size: 14px;">Protection 1st (Maximum Elite Protection Plan)</div>
+<div style="margin-top: 4px;"><span class="fd-box"></span>Purchased &nbsp;&nbsp; Plan No. ______________________ &nbsp;&nbsp;&nbsp; <span class="fd-box"></span>Declined</div>
+<div style="margin-top: 4px; font-size: 11px; color: #374151;">To file a claim, report within <strong>30 days</strong> of noticing the problem: call <strong>1-800-995-2229</strong>, email <strong>protectionfirst@montagefs.com</strong> or visit <strong>www.furnitureclaim.com</strong>. Have your sales receipt and plan number ready. The plan does not cover normal wear and tear, abuse or misuse. See your plan document for full terms.</div>
+</div>
+
+<!-- Acknowledgment -->
+<div style="margin-top: 10px; font-weight: 900; font-size: 15px;">Customer Acknowledgment</div>
+<div style="margin-top: 2px;">I have received and reviewed the care instructions above for my furniture. I understand that following them helps keep my furniture looking its best, and that problems caused by improper cleaning, abuse or misuse may not be covered.</div>
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin-top: 14px;">
+<tbody>
+<tr>
+<td width="62%" style="padding: 4px 12px 4px 0;"><div class="fd-line" style="min-height: 28px;"></div>Customer Signature</td>
+<td width="38%" style="padding: 4px 0;"><div class="fd-line" style="min-height: 28px;"></div>Date</td>
+</tr>
+<tr>
+<td style="padding: 10px 12px 4px 0;"><div class="fd-line" style="min-height: 22px;"></div>Sales Associate</td>
+<td style="padding: 10px 0 4px;"><div class="fd-line" style="min-height: 22px;"></div>Store</td>
+</tr>
+</tbody>
+</table>
+<div style="margin-top: 10px; text-align: center; font-size: 11px; color: #4b5563;">Thank you for shopping with Furniture Distributors &mdash; enjoy your new furniture!</div>
+</div>

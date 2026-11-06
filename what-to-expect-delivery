@@ -1,0 +1,103 @@
+<!-- ============== What to Expect on Delivery (with Delivery Tracker) ============== -->
+<div data-page="what-to-expect-delivery" style="max-width: 980px; margin: 0 auto; padding: 12px; font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height: 1.5; color: #111827;">
+<!-- Header -->
+<div style="background: #000; color: #fff; border-radius: 12px; padding: 18px 20px; text-align: center;">
+<div style="font-weight: 900; line-height: 1.1; letter-spacing: .02em; font-size: clamp(24px,4.2vw,40px);">What to Expect on Delivery</div>
+<div style="font-weight: 600; font-size: clamp(13px,2.3vw,16px); color: #d4d4d8; margin-top: 6px;">Help us make your delivery quick, safe &amp; successful</div>
+</div>
+
+<!-- Track delivery -->
+<div id="track" style="margin-top: 16px; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden;">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 16px; background: #fffbeb; border-bottom: 1px solid #fde68a;">
+<div>
+<div style="font-weight: 900; font-size: 20px;">🚚 Track Your Delivery</div>
+<div style="color: #4b5563; font-size: 14px;">Check your delivery status and arrival window anytime.</div>
+</div>
+<a href="https://furnituredistributors.dispatchtrack.com/track/widget/2ca040a51" target="_blank" rel="noopener" style="display: inline-block; background: #b45309; color: #fff; text-decoration: none; font-weight: 800; font-size: 14px; padding: 10px 16px; border-radius: 8px;">Open Delivery Tracker &rarr;</a>
+</div>
+<iframe src="https://furnituredistributors.dispatchtrack.com/track/widget/2ca040a51" title="Furniture Distributors delivery tracker" loading="lazy" style="display: block; width: 100%; height: 460px; border: 0; background: #fff;"></iframe>
+</div>
+
+<!-- Jump links -->
+<div style="margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px; font-weight: 800;">
+<a href="#delivery-time" style="background: #f3f4f6; color: #111827; text-decoration: none; padding: 8px 12px; border-radius: 999px;">Time of Delivery</a>
+<a href="#prepare" style="background: #f3f4f6; color: #111827; text-decoration: none; padding: 8px 12px; border-radius: 999px;">Preparing Your Home</a>
+<a href="#removal" style="background: #f3f4f6; color: #111827; text-decoration: none; padding: 8px 12px; border-radius: 999px;">Old Furniture Removal</a>
+<a href="#pickup" style="background: #f3f4f6; color: #111827; text-decoration: none; padding: 8px 12px; border-radius: 999px;">Picking Up Instead</a>
+<a href="#questions" style="background: #f3f4f6; color: #111827; text-decoration: none; padding: 8px 12px; border-radius: 999px;">Questions</a>
+</div>
+
+<!-- Steps -->
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin-top: 8px;">
+<tbody>
+<tr>
+<td width="50%" valign="top" style="padding: 8px;">
+<div id="delivery-time" style="border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; height: 100%;">
+<div style="font-weight: 900; font-size: 18px;">📞 Time of Delivery</div>
+<ul style="margin: 10px 0 0; padding-left: 20px; color: #374151; font-size: 15px;">
+<li>We will <strong>call you 30 minutes before we arrive</strong>.</li>
+<li>If we can&rsquo;t reach you by phone during your scheduled window after several attempts, we may need to reschedule.</li>
+<li>If we arrive during your scheduled window and no one is available to accept the merchandise, another delivery charge may apply and your delivery will be rescheduled.</li>
+<li>Your delivery charge covers a <strong>one-time placement</strong>.</li>
+</ul>
+</div>
+</td>
+<td width="50%" valign="top" style="padding: 8px;">
+<div id="prepare" style="border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; height: 100%;">
+<div style="font-weight: 900; font-size: 18px;">🏠 Preparing Your Home</div>
+<ul style="margin: 10px 0 0; padding-left: 20px; color: #374151; font-size: 15px;">
+<li>Provide safe, reasonable access to your property and driveway.</li>
+<li>Clear the delivery path inside your home of all breakables.</li>
+<li>Remove wall decor (pictures, plaques, mirrors) and loose rugs from halls and stairways we&rsquo;ll use.</li>
+<li>Clear the area where your new furniture will go.</li>
+<li>Please <strong>restrain your pets</strong> &mdash; we don&rsquo;t want anyone to get hurt.</li>
+</ul>
+<div style="margin-top: 10px; font-size: 13px; font-weight: 800; color: #b91c1c;">We cannot be responsible for damage caused by items left in the delivery path.</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<!-- Removal -->
+<div id="removal" style="margin: 8px; border: 1px solid #e5e7eb; border-left: 6px solid #b45309; border-radius: 12px; padding: 16px;">
+<div style="font-weight: 900; font-size: 18px;">🛋️ Pick Up, Removal or Replacement of Old Furniture</div>
+<div style="margin-top: 8px; color: #374151; font-size: 15px;">For liability reasons, our team cannot move or remove old furniture unless removal was <strong>authorized and paid for before delivery</strong>. Ask your sales associate about removal options when you purchase.</div>
+</div>
+
+<!-- Pickup -->
+<div id="pickup" style="margin: 16px 8px 8px; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden;">
+<div style="background: #111827; color: #fff; padding: 12px 16px; font-weight: 900; font-size: 18px;">📦 Picking Up Instead? What to Expect</div>
+<table role="presentation" width="100%" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="60%" valign="top" style="padding: 16px;">
+<ol style="margin: 0; padding-left: 20px; color: #374151; font-size: 15px;">
+<li style="margin-bottom: 6px;"><strong>Call ahead</strong> when you&rsquo;re on your way, especially if your furniture is at our central warehouse.</li>
+<li style="margin-bottom: 6px;"><strong>Bring supplies</strong> &mdash; blankets, plastic, rope, bungee cords or anything else you need to get it home safely.</li>
+<li><strong>Inspect and secure</strong> your furniture before you leave. Once it leaves our store or warehouse, you are responsible for your goods.</li>
+</ol>
+</td>
+<td width="40%" valign="top" style="padding: 16px; background: #f9fafb;">
+<div style="font-weight: 900;">Havelock Warehouse Pickup</div>
+<div style="margin-top: 6px; color: #374151; font-size: 14px;">112 Greenfield Heights Blvd<br />Havelock, NC 28532</div>
+<div style="margin-top: 8px; color: #374151; font-size: 14px;"><strong>Mon &ndash; Sat:</strong> 9:00 AM &ndash; 4:00 PM<br /><strong>Sunday:</strong> Closed</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- Questions -->
+<div id="questions" style="margin: 16px 8px 8px; background: #fffbeb; border: 1px solid #fde68a; border-radius: 12px; padding: 16px; text-align: center;">
+<div style="font-weight: 900; font-size: 18px;">Questions after your delivery?</div>
+<div style="margin-top: 6px; color: #374151; font-size: 15px;">Call your store or ask for <strong>Customer Service</strong>. If anything arrived damaged, please send pictures so we can help faster.</div>
+<div style="margin-top: 12px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px;">
+<a href="tel:2523207430" style="display: inline-block; background: #111827; color: #fff; text-decoration: none; font-weight: 800; font-size: 14px; padding: 10px 16px; border-radius: 8px;">Call (252) 320-7430</a>
+<a href="mailto:custserv@furnituredistributors.net" style="display: inline-block; background: #f3f4f6; color: #111827; text-decoration: none; font-weight: 800; font-size: 14px; padding: 10px 16px; border-radius: 8px;">Email Customer Service</a>
+<a href="/Content/FURNITURE%20CARE%20%20PROTECTION%20PLAN?id=117" style="display: inline-block; background: #f3f4f6; color: #111827; text-decoration: none; font-weight: 800; font-size: 14px; padding: 10px 16px; border-radius: 8px;">Furniture Care Tips</a>
+</div>
+</div>
+
+<div style="margin: 18px 8px 4px; text-align: center; font-weight: 900; font-size: 16px; color: #b45309;">We want another satisfied customer &mdash; thanks for helping make your delivery a success!</div>
+</div>
