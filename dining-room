@@ -8,160 +8,108 @@
 <div id="dining-room" style="margin: 26px 0 8px; font-weight: 900; font-size: 22px; letter-spacing: .02em; color: #111827;">🍽️ Dining Room <a href="/Content/MANAGER%20SPECIALS?id=84" style="font-weight: 800; font-size: 12px; color: #6b7280; text-decoration: none; margin-left: 8px;">Back to Manager&rsquo;s Specials</a></div>
 <!-- Cards -->
 <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="margin: 6px 0;">
-  <tbody>
+<tbody><!-- Row 1 -->
+<tr><!-- Lodenbay — D751-35/01(4) -->
+<td width="50%" valign="top" style="padding: 8px;">
+<table class="ms-card" data-reg="1699" data-now="1499" data-qty="1" data-badge="Clearance" role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden;">
+<tbody>
 <tr>
-  <td width="50%" valign="top" style="padding: 8px;"><table class="ms-card" data-reg="1699" data-now="1499" data-qty="5" data-badge="Clearance" role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden;">
-  <tbody>
-    <tr>
-      <td style="padding: 0;">
-        <div style="position: relative;">
-          <a href="/Product/SiteSearch?search=Lodenbay" style="text-decoration: none; color: inherit;">
-            <img src="https://fwaimages.blob.core.windows.net/s36/Manager%20Specials/Dining/Screenshot%202026-01-15%20152843.png" alt="Lodenbay" style="width: 100%; height: auto; display: block; border: 0;" />
-          </a>
-          <div class="ms-badge" style="position: absolute; top: 10px; left: 10px; background: #111827; color: #fff; font-weight: 900; border-radius: 999px; padding: 6px 10px; font-size: 12px; letter-spacing: .04em;">Clearance</div>
-          <div class="ms-offbadge" style="position: absolute; top: 10px; right: 10px; background: #b45309; color: #fff; font-weight: 900; border-radius: 999px; padding: 8px 14px; font-size: 14px; letter-spacing: .04em; box-shadow: 0 6px 14px rgba(0,0,0,.18);"></div>
-          <div style="position: absolute; left: 0; bottom: 0; background: #ffffff; color: #111827; font-weight: 900; font-size: 14px; padding: 6px 10px; border-top-right-radius: 8px;">Lodenbay</div>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 10px 12px 14px;">
-        <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td valign="top" style="padding-right: 10px;">
-                <div style="color: #6b7280; font-size: 12px;">Includes: 5 PC set</div>
-                <div style="margin-top: 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                  <div class="ms-nowline" style="font-weight: 900; font-size: clamp(17px, 4.6vw, 22px); line-height: 1.1; color: #b91c1c;"></div>
-                  <div style="color: #374151; font-size: 13px;">Was <span class="ms-regline" style="text-decoration: line-through;"></span></div>
-                </div>
-              </td>
-              <td valign="top" style="text-align: right;">
-                <div style="color: #6b7280; font-size: 12px;">Qty Left: 5</div>
-                <a href="/Home/Locations" style="display: inline-block; margin-top: 8px; padding: 8px 12px; border-radius: 8px; background: #f3f4f6; color: #111827; text-decoration: none; font-weight: 800; font-size: 12px;">Check Store Stock</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-  </tbody>
-</table></td>
-  <td width="50%" valign="top" style="padding: 8px;"><table class="ms-card" data-reg="1599" data-now="1299" data-qty="1" data-badge="Last One" role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden;">
-  <tbody>
-    <tr>
-      <td style="padding: 0;">
-        <div style="position: relative;">
-          <a href="/Product/SiteSearch?search=Grindleburg" style="text-decoration: none; color: inherit;">
-            <img src="https://fwaimages.blob.core.windows.net/s36/Manager%20Specials/Dining/Screenshot%202026-01-15%20152951.png" alt="Grindleburg" style="width: 100%; height: auto; display: block; border: 0;" />
-          </a>
-          <div class="ms-badge" style="position: absolute; top: 10px; left: 10px; background: #111827; color: #fff; font-weight: 900; border-radius: 999px; padding: 6px 10px; font-size: 12px; letter-spacing: .04em;">Clearance</div>
-          <div class="ms-offbadge" style="position: absolute; top: 10px; right: 10px; background: #b45309; color: #fff; font-weight: 900; border-radius: 999px; padding: 8px 14px; font-size: 14px; letter-spacing: .04em; box-shadow: 0 6px 14px rgba(0,0,0,.18);"></div>
-          <div style="position: absolute; left: 0; bottom: 0; background: #ffffff; color: #111827; font-weight: 900; font-size: 14px; padding: 6px 10px; border-top-right-radius: 8px;">Grindleburg</div>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 10px 12px 14px;">
-        <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td valign="top" style="padding-right: 10px;">
-                <div style="color: #6b7280; font-size: 12px;">Includes: 5 PC set</div>
-                <div style="margin-top: 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                  <div class="ms-nowline" style="font-weight: 900; font-size: clamp(17px, 4.6vw, 22px); line-height: 1.1; color: #b91c1c;"></div>
-                  <div style="color: #374151; font-size: 13px;">Was <span class="ms-regline" style="text-decoration: line-through;"></span></div>
-                </div>
-              </td>
-              <td valign="top" style="text-align: right;">
-                <div style="color: #6b7280; font-size: 12px;">Qty Left: 1</div>
-                <a href="/Home/Locations" style="display: inline-block; margin-top: 8px; padding: 8px 12px; border-radius: 8px; background: #f3f4f6; color: #111827; text-decoration: none; font-weight: 800; font-size: 12px;">Check Store Stock</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-  </tbody>
-</table></td>
+<td style="padding: 0;">
+<div style="position: relative;"><a href="/Product/SiteSearch?search=Lodenbay" style="text-decoration: none; color: inherit;"> <img src="https://fwaimages.blob.core.windows.net/s36/Manager%20Specials/Dining/Screenshot%202026-01-15%20152843.png" alt="Lodenbay &mdash; 5-Piece Dining Room (D751-35/01(4))" style="width: 100%; height: auto; display: block; border: 0;" /> </a> <!-- Top-left badge -->
+<div class="ms-badge" style="position: absolute; top: 10px; left: 10px; background: #111827; color: #fff; font-weight: 900; border-radius: 999px; padding: 6px 10px; font-size: 12px; letter-spacing: .04em;">Clearance</div>
+<!-- Top-right badge (Amount Off) - UPDATED STYLE -->
+<div class="ms-offbadge" style="position: absolute; top: 10px; right: 10px; background: #b45309; color: #fff; font-weight: 900; border-radius: 999px; padding: 8px 14px; font-size: 14px; letter-spacing: .04em; box-shadow: 0 6px 14px rgba(0,0,0,.18);"></div>
+</div>
+<div style="padding: 10px 12px 0; font-weight: 900; font-size: 14px; color: #111827;">Lodenbay</div>
+</td>
 </tr>
 <tr>
-  <td width="50%" valign="top" style="padding: 8px;"><table class="ms-card" data-reg="3899" data-now="2999" data-qty="1" data-badge="Last One" role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden;">
-  <tbody>
-    <tr>
-      <td style="padding: 0;">
-        <div style="position: relative;">
-          <a href="/Product/SiteSearch?search=Arlendyne" style="text-decoration: none; color: inherit;">
-            <img src="https://fwaimages.blob.core.windows.net/s36/Manager%20Specials/Dining/Screenshot%202026-01-15%20153709.png" alt="Arlendyne" style="width: 100%; height: auto; display: block; border: 0;" />
-          </a>
-          <div class="ms-badge" style="position: absolute; top: 10px; left: 10px; background: #111827; color: #fff; font-weight: 900; border-radius: 999px; padding: 6px 10px; font-size: 12px; letter-spacing: .04em;">Clearance</div>
-          <div class="ms-offbadge" style="position: absolute; top: 10px; right: 10px; background: #b45309; color: #fff; font-weight: 900; border-radius: 999px; padding: 8px 14px; font-size: 14px; letter-spacing: .04em; box-shadow: 0 6px 14px rgba(0,0,0,.18);"></div>
-          <div style="position: absolute; left: 0; bottom: 0; background: #ffffff; color: #111827; font-weight: 900; font-size: 14px; padding: 6px 10px; border-top-right-radius: 8px;">Arlendyne</div>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 10px 12px 14px;">
-        <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td valign="top" style="padding-right: 10px;">
-                <div style="color: #6b7280; font-size: 12px;">Includes: 9 PC set</div>
-                <div style="margin-top: 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                  <div class="ms-nowline" style="font-weight: 900; font-size: clamp(17px, 4.6vw, 22px); line-height: 1.1; color: #b91c1c;"></div>
-                  <div style="color: #374151; font-size: 13px;">Was <span class="ms-regline" style="text-decoration: line-through;"></span></div>
-                </div>
-              </td>
-              <td valign="top" style="text-align: right;">
-                <div style="color: #6b7280; font-size: 12px;">Qty Left: 1</div>
-                <a href="/Home/Locations" style="display: inline-block; margin-top: 8px; padding: 8px 12px; border-radius: 8px; background: #f3f4f6; color: #111827; text-decoration: none; font-weight: 800; font-size: 12px;">Check Store Stock</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-  </tbody>
-</table></td>
-  <td width="50%" valign="top" style="padding: 8px;"><table class="ms-card" data-reg="1899" data-now="1599" data-qty="10" data-badge="Overstock" role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden;">
-  <tbody>
-    <tr>
-      <td style="padding: 0;">
-        <div style="position: relative;">
-          <a href="/Product/SiteSearch?search=Summer%20House%206PC%20Rectangular%20Dining%20Room" style="text-decoration: none; color: inherit;">
-            <img src="https://fwaimages.blob.core.windows.net/s36/Manager%20Specials/Dining/Screenshot%202026-01-15%20153815.png" alt="Summer House 6PC Rectangular Dining Room" style="width: 100%; height: auto; display: block; border: 0;" />
-          </a>
-          <div class="ms-badge" style="position: absolute; top: 10px; left: 10px; background: #111827; color: #fff; font-weight: 900; border-radius: 999px; padding: 6px 10px; font-size: 12px; letter-spacing: .04em;">Clearance</div>
-          <div class="ms-offbadge" style="position: absolute; top: 10px; right: 10px; background: #b45309; color: #fff; font-weight: 900; border-radius: 999px; padding: 8px 14px; font-size: 14px; letter-spacing: .04em; box-shadow: 0 6px 14px rgba(0,0,0,.18);"></div>
-          <div style="position: absolute; left: 0; bottom: 0; background: #ffffff; color: #111827; font-weight: 900; font-size: 14px; padding: 6px 10px; border-top-right-radius: 8px;">Summer House 6PC Rectangular Dining Room</div>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 10px 12px 14px;">
-        <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
-          <tbody>
-            <tr>
-              <td valign="top" style="padding-right: 10px;">
-                <div style="color: #6b7280; font-size: 12px;">Includes: 6 PC set</div>
-                <div style="margin-top: 8px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-                  <div class="ms-nowline" style="font-weight: 900; font-size: clamp(17px, 4.6vw, 22px); line-height: 1.1; color: #b91c1c;"></div>
-                  <div style="color: #374151; font-size: 13px;">Was <span class="ms-regline" style="text-decoration: line-through;"></span></div>
-                </div>
-              </td>
-              <td valign="top" style="text-align: right;">
-                <div style="color: #6b7280; font-size: 12px;">Qty Left: 10</div>
-                <a href="/Home/Locations" style="display: inline-block; margin-top: 8px; padding: 8px 12px; border-radius: 8px; background: #f3f4f6; color: #111827; text-decoration: none; font-weight: 800; font-size: 12px;">Check Store Stock</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-  </tbody>
-</table></td>
+<td style="padding: 10px 12px 14px;">
+<div class="ms-nowline" style="font-weight: 900; font-size: clamp(17px, 4.6vw, 22px); line-height: 1.1; color: #b91c1c;"></div>
+<div style="margin-top: 6px; color: #374151; font-size: 13px;">Was <span class="ms-regline" style="text-decoration: line-through;"></span></div>
+<div style="margin-top: 10px;"><a href="/Product/SiteSearch?search=Lodenbay" style="display: inline-block; padding: 10px 14px; border-radius: 8px; background: #111827; color: #fff; text-decoration: none; font-weight: 800; font-size: 13px;">View Item</a> <a href="/Home/Locations" style="display: inline-block; padding: 10px 14px; border-radius: 8px; background: #f3f4f6; color: #111827; text-decoration: none; font-weight: 800; font-size: 13px; margin-left: 6px;">Check Store Stock</a></div>
+<div style="margin-top: 8px; color: #6b7280; font-size: 12px;">SKU: D751-35/01(4) &bull; Qty Left: 1</div>
+</td>
 </tr>
-  </tbody>
+</tbody>
+</table>
+</td>
+<!-- Grindleburg — D754/50B/50T/05 (4) -->
+<td width="50%" valign="top" style="padding: 8px;">
+<table class="ms-card" data-reg="1599" data-now="1299" data-qty="1" data-badge="Clearance" role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden;">
+<tbody>
+<tr>
+<td style="padding: 0;">
+<div style="position: relative;"><a href="/Product/SiteSearch?search=Grindleburg" style="text-decoration: none; color: inherit;"> <img src="https://fwaimages.blob.core.windows.net/s36/Manager%20Specials/Dining/Screenshot%202026-01-15%20152951.png" alt="Grindleburg &mdash; 5-Piece Dining Room (D754/50B/50T/05 (4))" style="width: 100%; height: auto; display: block; border: 0;" /> </a>
+<div class="ms-badge" style="position: absolute; top: 10px; left: 10px; background: #111827; color: #fff; font-weight: 900; border-radius: 999px; padding: 6px 10px; font-size: 12px; letter-spacing: .04em;">Clearance</div>
+<div class="ms-offbadge" style="position: absolute; top: 10px; right: 10px; background: #b45309; color: #fff; font-weight: 900; border-radius: 999px; padding: 8px 14px; font-size: 14px; letter-spacing: .04em; box-shadow: 0 6px 14px rgba(0,0,0,.18);"></div>
+</div>
+<div style="padding: 10px 12px 0; font-weight: 900; font-size: 14px; color: #111827;">Grindleburg</div>
+</td>
+</tr>
+<tr>
+<td style="padding: 10px 12px 14px;">
+<div class="ms-nowline" style="font-weight: 900; font-size: clamp(17px, 4.6vw, 22px); line-height: 1.1; color: #b91c1c;"></div>
+<div style="margin-top: 6px; color: #374151; font-size: 13px;">Was <span class="ms-regline" style="text-decoration: line-through;"></span></div>
+<div style="margin-top: 10px;"><a href="/Product/SiteSearch?search=Grindleburg" style="display: inline-block; padding: 10px 14px; border-radius: 8px; background: #111827; color: #fff; text-decoration: none; font-weight: 800; font-size: 13px;">View Item</a> <a href="/Home/Locations" style="display: inline-block; padding: 10px 14px; border-radius: 8px; background: #f3f4f6; color: #111827; text-decoration: none; font-weight: 800; font-size: 13px; margin-left: 6px;">Check Store Stock</a></div>
+<div style="margin-top: 8px; color: #6b7280; font-size: 12px;">SKU: D754/50B/50T/05 (4) &bull; Qty Left: 1</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr><!-- Arlendyne — D980-55B/55T/01 (8) -->
+<td width="50%" valign="top" style="padding: 8px;">
+<table class="ms-card" data-reg="3899" data-now="2999" data-qty="1" data-badge="Clearance" role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden;">
+<tbody>
+<tr>
+<td style="padding: 0;">
+<div style="position: relative;"><a href="/Product/SiteSearch?search=Arlendyne" style="text-decoration: none; color: inherit;"> <img src="https://fwaimages.blob.core.windows.net/s36/Manager%20Specials/Dining/Screenshot%202026-01-15%20153709.png" alt="Arlendyne &mdash; 9-Piece Dining Room (D980-55B/55T/01 (8))" style="width: 100%; height: auto; display: block; border: 0;" /> </a>
+<div class="ms-badge" style="position: absolute; top: 10px; left: 10px; background: #111827; color: #fff; font-weight: 900; border-radius: 999px; padding: 6px 10px; font-size: 12px; letter-spacing: .04em;">Clearance</div>
+<div class="ms-offbadge" style="position: absolute; top: 10px; right: 10px; background: #b45309; color: #fff; font-weight: 900; border-radius: 999px; padding: 8px 14px; font-size: 14px; letter-spacing: .04em; box-shadow: 0 6px 14px rgba(0,0,0,.18);"></div>
+</div>
+<div style="padding: 10px 12px 0; font-weight: 900; font-size: 14px; color: #111827;">Arlendyne</div>
+</td>
+</tr>
+<tr>
+<td style="padding: 10px 12px 14px;">
+<div class="ms-nowline" style="font-weight: 900; font-size: clamp(17px, 4.6vw, 22px); line-height: 1.1; color: #b91c1c;"></div>
+<div style="margin-top: 6px; color: #374151; font-size: 13px;">Was <span class="ms-regline" style="text-decoration: line-through;"></span></div>
+<div style="margin-top: 10px;"><a href="/Product/SiteSearch?search=Arlendyne" style="display: inline-block; padding: 10px 14px; border-radius: 8px; background: #111827; color: #fff; text-decoration: none; font-weight: 800; font-size: 13px;">View Item</a> <a href="/Home/Locations" style="display: inline-block; padding: 10px 14px; border-radius: 8px; background: #f3f4f6; color: #111827; text-decoration: none; font-weight: 800; font-size: 13px; margin-left: 6px;">Check Store Stock</a></div>
+<div style="margin-top: 8px; color: #6b7280; font-size: 12px;">SKU: D980-55B/55T/01 (8) &bull; Qty Left: 1</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<!-- Summer House Dining Room — 607-T4078/C9001S (4)/C9001B - SR5239 -->
+<td width="50%" valign="top" style="padding: 8px;">
+<table class="ms-card" data-reg="1899" data-now="1599" data-qty="1" data-badge="Clearance" role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden;">
+<tbody>
+<tr>
+<td style="padding: 0;">
+<div style="position: relative;"><a href="/Product/SiteSearch?search=Summer%20House%20Dining" style="text-decoration: none; color: inherit;"> <img src="https://fwaimages.blob.core.windows.net/s36/Manager%20Specials/Dining/Screenshot%202026-01-15%20153815.png" alt="Summer House &mdash; 6-Piece Rectangular Dining Room (607-T4078/C9001S (4)/C9001B - SR5239)" style="width: 100%; height: auto; display: block; border: 0;" /> </a>
+<div class="ms-badge" style="position: absolute; top: 10px; left: 10px; background: #111827; color: #fff; font-weight: 900; border-radius: 999px; padding: 6px 10px; font-size: 12px; letter-spacing: .04em;">Clearance</div>
+<div class="ms-offbadge" style="position: absolute; top: 10px; right: 10px; background: #b45309; color: #fff; font-weight: 900; border-radius: 999px; padding: 8px 14px; font-size: 14px; letter-spacing: .04em; box-shadow: 0 6px 14px rgba(0,0,0,.18);"></div>
+</div>
+<div style="padding: 10px 12px 0; font-weight: 900; font-size: 14px; color: #111827;">Summer House</div>
+</td>
+</tr>
+<tr>
+<td style="padding: 10px 12px 14px;">
+<div class="ms-nowline" style="font-weight: 900; font-size: clamp(17px, 4.6vw, 22px); line-height: 1.1; color: #b91c1c;"></div>
+<div style="margin-top: 6px; color: #374151; font-size: 13px;">Was <span class="ms-regline" style="text-decoration: line-through;"></span></div>
+<div style="margin-top: 10px;"><a href="/Product/SiteSearch?search=Summer%20House%20Dining" style="display: inline-block; padding: 10px 14px; border-radius: 8px; background: #111827; color: #fff; text-decoration: none; font-weight: 800; font-size: 13px;">View Item</a> <a href="/Home/Locations" style="display: inline-block; padding: 10px 14px; border-radius: 8px; background: #f3f4f6; color: #111827; text-decoration: none; font-weight: 800; font-size: 13px; margin-left: 6px;">Check Store Stock</a></div>
+<div style="margin-top: 8px; color: #6b7280; font-size: 12px;">SKU: 607-T4078/C9001S (4)/C9001B - SR5239 &bull; Qty Left: 1</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
 </table>
 <!-- Logic -->
 <script>
@@ -178,7 +126,7 @@
         var now = Number(card.getAttribute('data-now') || 0);
         var qty = String(card.getAttribute('data-qty') || '').trim();
 
-        // Left badge
+        /* Left badge */
         var badge = card.querySelector('.ms-badge');
         var badgeOverride = String(card.getAttribute('data-badge') || '').trim();
         if (badge) {
@@ -186,7 +134,7 @@
           else badge.textContent = (qty === '1') ? 'Last Ones' : 'Clearance';
         }
 
-        // Top-right badge: amount off
+        /* Top-right badge: amount off */
         var offBadge = card.querySelector('.ms-offbadge');
         if (offBadge && reg > 0 && now > 0 && reg > now) {
           offBadge.textContent = money(reg - now) + ' OFF';
@@ -196,14 +144,14 @@
           offBadge.style.display = 'none';
         }
 
-        // Under-image line: NOW price
+        /* Under-image line: NOW price */
         var nowLine = card.querySelector('.ms-nowline');
         if (nowLine) {
           if (now > 0) nowLine.textContent = 'Now ' + money(now);
           else nowLine.textContent = '';
         }
 
-        // Was line value
+        /* Was line value */
         var regLine = card.querySelector('.ms-regline');
         if (regLine) {
           if (reg > 0) regLine.textContent = money(reg);
