@@ -1,0 +1,389 @@
+<!-- ============== Finance Walkthrough (INTERNAL tool for sales staff — do not publish on the public website) ==============
+     Sources: FINANCE BOOK (2026-03), FINANCE CHECKLIST (2026-01), financing comparison sheet, Time Financing Cheat Sheet.
+     No logins, passwords or merchant numbers are stored here on purpose — use the FINANCE LOGINS quicklink. -->
+<style>
+  #fw { max-width: 980px; margin: 0 auto; padding: 12px; font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height: 1.45; color: #111827; }
+  #fw * { box-sizing: border-box; }
+  #fw .hdr { background: #000; color: #fff; border-radius: 12px; padding: 16px 20px; }
+  #fw .hdr b { display: block; font-size: clamp(22px,4vw,34px); font-weight: 900; letter-spacing: .02em; }
+  #fw .hdr span { color: #d4d4d8; font-size: 14px; }
+  #fw .steps { display: flex; gap: 6px; margin: 14px 0; flex-wrap: wrap; }
+  #fw .steps button { flex: 1 1 150px; border: 1px solid #e5e7eb; background: #f9fafb; border-radius: 10px; padding: 10px; font-weight: 800; font-size: 14px; cursor: pointer; color: #6b7280; text-align: left; }
+  #fw .steps button.on { background: #111827; color: #fff; border-color: #111827; }
+  #fw .card { border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; margin-bottom: 12px; background: #fff; }
+  #fw h2 { margin: 0 0 10px; font-size: 18px; font-weight: 900; }
+  #fw .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px 14px; }
+  #fw label.f { display: block; font-size: 13px; font-weight: 700; color: #374151; }
+  #fw label.f input, #fw label.f select { display: block; width: 100%; margin-top: 4px; padding: 9px 10px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 15px; font-family: inherit; }
+  #fw .q { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 9px 0; border-top: 1px solid #f3f4f6; font-size: 14px; }
+  #fw .q:first-of-type { border-top: 0; }
+  #fw .yn { display: flex; gap: 4px; flex-shrink: 0; }
+  #fw .yn button { border: 1px solid #d1d5db; background: #fff; border-radius: 8px; padding: 6px 12px; font-weight: 800; cursor: pointer; font-size: 13px; }
+  #fw .yn button.on { background: #b45309; border-color: #b45309; color: #fff; }
+  #fw .co { border: 1px solid #e5e7eb; border-radius: 10px; padding: 12px; display: flex; gap: 12px; align-items: flex-start; justify-content: space-between; margin-bottom: 8px; }
+  #fw .co.no { opacity: .55; background: #f9fafb; }
+  #fw .co b { font-size: 16px; }
+  #fw .tag { display: inline-block; font-size: 11px; font-weight: 800; border-radius: 999px; padding: 2px 8px; margin-left: 6px; vertical-align: 2px; }
+  #fw .t-rev { background: #dcfce7; color: #166534; }
+  #fw .t-ins { background: #dbeafe; color: #1e40af; }
+  #fw .t-lto { background: #fef3c7; color: #92400e; }
+  #fw .why { font-size: 12.5px; color: #6b7280; margin-top: 4px; }
+  #fw .why .bad { color: #b91c1c; font-weight: 700; }
+  #fw .why .warn { color: #92400e; font-weight: 700; }
+  #fw .btn { display: inline-block; border: 0; border-radius: 8px; padding: 9px 14px; font-weight: 800; font-size: 14px; cursor: pointer; text-decoration: none; background: #111827; color: #fff; font-family: inherit; }
+  #fw .btn.alt { background: #f3f4f6; color: #111827; }
+  #fw .btn.gold { background: #b45309; }
+  #fw .btn[disabled] { opacity: .4; cursor: not-allowed; }
+  #fw ul.ck { list-style: none; margin: 0; padding: 0; }
+  #fw ul.ck li { display: flex; gap: 10px; align-items: flex-start; padding: 7px 0; border-top: 1px solid #f3f4f6; font-size: 14.5px; }
+  #fw ul.ck li:first-child { border-top: 0; }
+  #fw ul.ck input { width: 18px; height: 18px; margin-top: 2px; flex-shrink: 0; accent-color: #b45309; }
+  #fw ul.ck li.done span { color: #9ca3af; text-decoration: line-through; }
+  #fw .note { background: #fffbeb; border: 1px solid #fde68a; border-radius: 10px; padding: 10px 12px; font-size: 13.5px; color: #78350f; margin-bottom: 10px; }
+  #fw .alert { background: #fef2f2; border: 1px solid #fecaca; color: #991b1b; }
+  #fw .prog { height: 8px; background: #f3f4f6; border-radius: 999px; overflow: hidden; margin: 6px 0 2px; }
+  #fw .prog i { display: block; height: 100%; background: #b45309; width: 0; transition: width .2s; }
+  #fw textarea { width: 100%; min-height: 150px; font-family: ui-monospace,Menlo,Consolas,monospace; font-size: 13px; padding: 10px; border: 1px solid #d1d5db; border-radius: 8px; }
+  #fw .row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+  #fw .hide { display: none !important; }
+  @media print {
+    body * { visibility: hidden !important; }
+    #fw-print, #fw-print * { visibility: visible !important; }
+    #fw-print { display: block !important; position: absolute; left: 0; top: 0; width: 100%; font-size: 12px; }
+  }
+</style>
+
+<div id="fw">
+  <div class="hdr"><b>Finance Walkthrough</b><span>Pick the right finance company, follow the steps, and send Kristen a complete file the first time.</span></div>
+
+  <div class="steps">
+    <button type="button" data-go="1" class="on">1 &middot; Deal &amp; customer</button>
+    <button type="button" data-go="2">2 &middot; Steps &amp; paperwork</button>
+    <button type="button" data-go="3">3 &middot; Send to Kristen</button>
+  </div>
+
+  <!-- STEP 1 -->
+  <section data-step="1">
+    <div class="card">
+      <h2>The deal</h2>
+      <div class="grid">
+        <label class="f">Ticket / invoice #<input id="fw-ticket" inputmode="numeric" placeholder="e.g. 12651" /></label>
+        <label class="f">Customer name (as on ID)<input id="fw-cust" placeholder="First Last" /></label>
+        <label class="f">Co-applicant (if any)<input id="fw-coapp" placeholder="optional" /></label>
+        <label class="f">Amount to finance ($)<input id="fw-amt" inputmode="decimal" placeholder="0.00" /></label>
+        <label class="f">Delivery / pickup date<input id="fw-date" type="date" /></label>
+        <label class="f">Store<select id="fw-store"><option value="">Choose…</option><option>Havelock</option><option>Morehead City</option><option>Greenville</option><option>Cherry Point</option><option>Camp Lejeune</option></select></label>
+        <label class="f">Sales associate<input id="fw-rep" placeholder="Your name" /></label>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Quick questions</h2>
+      <div id="fw-qs"></div>
+    </div>
+
+    <div class="card">
+      <h2>Who can finance this deal? <span style="font-weight:600;font-size:13px;color:#6b7280;">Try them top to bottom.</span></h2>
+      <div class="note"><b>Always:</b> ask for a higher approval than the ticket amount. Only <b>Synchrony and Wells Fargo</b> offer 12-month same-as-cash &mdash; if they decline, tell the customer we can&rsquo;t do 12 months with the other options.</div>
+      <div id="fw-cos"></div>
+    </div>
+  </section>
+
+  <!-- STEP 2 -->
+  <section data-step="2" class="hide">
+    <div class="card">
+      <h2 id="fw-co-title">Steps</h2>
+      <div id="fw-co-meta" class="why" style="margin:-4px 0 10px;"></div>
+      <div class="prog"><i id="fw-prog"></i></div>
+      <div id="fw-prog-txt" class="why" style="margin-bottom:10px;"></div>
+      <div id="fw-co-warn"></div>
+      <h2 style="font-size:15px;margin-top:6px;">Before the customer signs</h2>
+      <ul class="ck" id="fw-ck-before"></ul>
+      <h2 style="font-size:15px;margin-top:14px;" id="fw-ck-app-title">Application</h2>
+      <ul class="ck" id="fw-ck-app"></ul>
+      <h2 style="font-size:15px;margin-top:14px;">Scan to Kristen (put the ticket # in the subject)</h2>
+      <ul class="ck" id="fw-ck-docs"></ul>
+      <div class="row"><button type="button" class="btn alt" data-go="1">&larr; Back</button><button type="button" class="btn gold" data-go="3">Next: send to Kristen &rarr;</button></div>
+    </div>
+    <div class="card">
+      <h2 style="font-size:15px;">If the customer changes the ticket</h2>
+      <ul style="margin:0;padding-left:18px;font-size:14px;color:#374151;">
+        <li>You redo it &mdash; new financing paperwork <b>and</b> a newly signed sales order so the amounts match. Don&rsquo;t hand it to Kristen to fix.</li>
+        <li><b>Wells Fargo / TD:</b> void the amount in their system (it&rsquo;s immediate), then redo the paperwork.</li>
+        <li><b>Synchrony:</b> call to void (1-800-333-1082). Once voided the credit is back and you can redo it.</li>
+        <li><b>Time / Lendmark:</b> need the exact amount &mdash; call for new figures if anything changes.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- STEP 3 -->
+  <section data-step="3" class="hide">
+    <div class="card">
+      <h2>Send the file to Kristen</h2>
+      <div id="fw-missing"></div>
+      <div class="note">Attach your scans to the email before you send it. The email lists what&rsquo;s included so Kristen can check it at a glance.</div>
+      <label class="f" style="margin-bottom:6px;">Email to Kristen (copy to Kathleen)</label>
+      <textarea id="fw-email" readonly></textarea>
+      <div class="row">
+        <a class="btn gold" id="fw-mailto" href="#">Open email</a>
+        <button type="button" class="btn alt" data-copy="fw-email">Copy text</button>
+        <button type="button" class="btn alt" id="fw-printbtn">Print cover sheet</button>
+      </div>
+    </div>
+    <div class="card hide" id="fw-slack-card">
+      <h2>Post in Slack: #snapandkoalifiacima</h2>
+      <div class="why" style="margin:-4px 0 8px;">Snap, Koalafi and Acima don&rsquo;t put customer names on their funding reports &mdash; this post is how Kristen matches the money to your deal.</div>
+      <textarea id="fw-slack" readonly style="min-height:90px;"></textarea>
+      <div class="row"><button type="button" class="btn alt" data-copy="fw-slack">Copy Slack post</button></div>
+    </div>
+    <div class="row"><button type="button" class="btn alt" data-go="2">&larr; Back to steps</button><button type="button" class="btn alt" id="fw-reset">Start a new deal</button></div>
+  </section>
+
+  <div id="fw-print" class="hide"></div>
+</div>
+
+<script>
+(function () {
+  var KRISTEN = 'kristen@furnituredistributors.net';
+  var KATHLEEN = 'kesluz@furnituredistributors.net';
+
+  // Questions: id, text. Answers stored as 'y' / 'n' / undefined.
+  var QS = [
+    ['twelve', 'Does the customer want 12-month same-as-cash?'],
+    ['military', 'Is the customer active-duty military?'],
+    ['ncva', 'Do they have an NC or VA driver’s license?'],
+    ['bedding', 'Is bedding (mattress/foundation) more than half the finance amount?'],
+    ['bank', 'Do they have a checking account at a regular bank (not Chime or another online-only bank) with no overdrafts in the last ~60 days?'],
+    ['closing', 'Are they closing on a house soon?'],
+    ['email', 'Do they have an email address?']
+  ];
+
+  // Finance companies, in the order sales should try them.
+  var COS = [
+    { id: 'syn', name: 'Synchrony', type: 'rev', phone: '1-800-333-1082', credit: '620+ (good to excellent)', twelve: true,
+      app: ['Ask if they want a co-applicant.', 'Enter the application from the driver’s license and confirm every field.',
+            'Net income is ONE person only — not household income.', 'Second form of ID: a credit card — check exp. date and that the name matches.',
+            'Double-check who is financing vs. who gets the furniture — bill-to and deliver-to must be right on the ticket.',
+            'Use the special finance code for any special financing (Synchrony/Wells Fargo Finance Codes quicklink).',
+            'Explain deferred interest: divide the amount financed by the number of months and pay THAT, not the minimum. One day late = interest back to the purchase date.',
+            'Process the sale as AUTHORIZE ONLY.', 'Print the application; customer signs page 2. Staple the rest and give it to the customer with their tickets.',
+            'Tell them to expect their first bill 30–45 days after we process it.'],
+      docs: ['Signed customer application', 'Signed copy of sales ticket', 'Signed Synchrony receipt', 'Copy of driver’s license'] },
+    { id: 'wf', name: 'Wells Fargo', type: 'rev', phone: '1-800-551-5111', credit: '620+ (good to excellent)', twelve: true,
+      app: ['Ask if they want a co-applicant.', 'Enter the application from the driver’s license and confirm every field.',
+            'Annual income is ONE person only — not household income.', 'Own/rent: if the home is paid off, ask the yearly property tax and divide by 12 (can’t enter 0).',
+            'Second form of ID: a credit card — check exp. date and that the name matches.',
+            'Double-check who is financing vs. who gets the furniture — bill-to and deliver-to must be right on the ticket.',
+            'Use the special finance code for any special financing.',
+            'Explain deferred interest: divide the amount financed by the number of months and pay THAT, not the minimum. One day late = interest back to the purchase date.',
+            'Process the sale as AUTHORIZE ONLY.', 'Tell them to expect their first bill 30–45 days after we process it.'],
+      docs: ['Wells Fargo “transaction complete” page (it has the email for signature)', 'Signed copy of sales ticket', 'Copy of driver’s license'] },
+    { id: 'lend', name: 'Lendmark', type: 'ins', phone: '252-649-0083 (DeLynn Lewis)', credit: '520+ (marginal to excellent)', noBedding: true, exact: true,
+      app: ['Have the EXACT amount — if it changes you must call for new figures.', 'Any state driver’s license is OK; military is OK.',
+            'Whoever finances must be the one getting the furniture. Co-applicant must be on the ticket.', 'Branch is New Bern. Filing fee is $0.',
+            'Own/rent: if paid off, ask the yearly property tax and divide by 12 (can’t enter 0). Mortgage: half the payment if spouses both pay.',
+            'Get work history and up to 2 years of previous addresses.', 'Ask if they want to make a down payment.',
+            'Contract: sign page 2, leave page 4 blank, sign page 5 (arbitration).', 'Contracts expire in 30 days — if delivery/pickup is later, warn the customer they may need to re-sign.'],
+      docs: ['Signed customer application (all signed with the same date)', 'Signed contract (same date)', 'Signed copy of sales ticket (same date)', 'Copy of driver’s license', 'All amounts match to the penny — no highlights or stray marks',
+             'Mail the ORIGINALS right after scanning — Kristen can’t cash it in without them'] },
+    { id: 'time', name: 'Time Finance', type: 'ins', phone: '252-808-3070 ext. 1901 (Ivy) — sometimes open Saturday', credit: '520+ (marginal to excellent)', noBedding: true, exact: true, noMilitary: true, ncva: true, min: 300, max: 7500,
+      app: ['Have the EXACT amount — if it changes you must call for new figures.', 'Dealer portal: New Application → Individual or Joint → choose the branch.',
+            'Product price = total of goods + tax + delivery BEFORE down payment. Description = merchandise purchased.', 'Enter any down payment (sometimes required with Time).',
+            'Plan: choose REGULAR financing only.', 'Term: $300–$1,000 = 6–18 mo • $1,000.01–$2,000 = 12–24 mo • $2,000.01–$3,000 = 12–30 mo • $3,000.01–$7,500 = 12–36 mo.',
+            'Whoever finances must be the one getting the furniture. Co-applicant must be on the ticket.',
+            'Own/rent: if paid off, ask the yearly property tax and divide by 12 (can’t enter 0). Mortgage: half the payment if spouses both pay.',
+            'Get work history and up to 2 years of previous addresses. No email? Use noemail@none.com.', 'Customer initials = permission to run credit → Submit.',
+            'Call Ivy while the customer is in front of you to get the approval. “Pending” means the deal isn’t done yet.',
+            'Contract: sign page 2, leave page 4 blank, sign page 5 (arbitration).', 'Contracts expire in 30 days — if delivery/pickup is later, warn the customer they may need to re-sign.'],
+      docs: ['Signed customer application (all signed with the same date)', 'Signed contract — merchant copy (buyer keeps theirs)', 'Signed copy of sales ticket (same date)', 'Copy of driver’s license', 'All amounts match to the penny — no highlights or stray marks',
+             'Send the ORIGINALS right away — Kristen can’t cash it in without them'] },
+    { id: 'snap', name: 'Snap', type: 'lto', phone: '877-789-4384', credit: 'No credit needed (soft pull)', lto: true, min: 300, max: 5000, slack: true,
+      warn: ['CHARGE TAX on Snap deals.', 'Bank rules conflict between our docs (comparison sheet says online banks OK; Finance Book says no). If the customer only has an online bank, call Snap first.'],
+      app: ['CHARGE TAX on the ticket.', 'Customer texts 36318 to 48078 (or uses the card/pamphlet) and applies on their own phone.', 'Needs an email address, a checking account + routing number, and at least $750/month coming in (can be multiple sources).',
+            'Key the invoice into the customer’s phone — every item, including Pro1st. Delivery + tax are lumped into the total.', '$39 processing fee on the application.',
+            'Snap issues a virtual Discover card number — run it as a credit card. Payments start as soon as it’s swiped.',
+            'Explain the 90-day same-as-cash option and that they can call Snap about an early payoff discount after 90 days.'],
+      docs: ['Signed copy of sales ticket (same date)', 'Copy of driver’s license', 'Only if entered on the Snap portal: lease summary (application ID → View Lease Summary → print)', 'Posted in #snapandkoalifiacima'] },
+    { id: 'acima', name: 'Acima', type: 'lto', phone: '801-297-1980', credit: 'No credit needed (soft pull)', lto: true, min: 1000, max: 6000, slack: true, noOnlineBank: true,
+      warn: ['NO TAX — check the no-tax option in EZ Pro.', 'Can’t take money down in store. If the ticket is over the approval, do a separate invoice for the extra.'],
+      app: ['Check NO TAX in EZ Pro.', 'Needs an email address and a checking account + routing number at a regular bank (no Chime/online banks), no overdrafts in ~60 days, no bankruptcy. $1,000/month minimum from one source.',
+            'On the Acima site, enter the customer’s mobile # and text them the application link (you can do it on the computer for them if needed).',
+            'Process the invoice on the computer — it toggles back and forth with their phone until complete.', '$50 processing fee (no debit cards).',
+            'The delivery date you enter is when their payments start.', 'Approval includes an automatic 10% bump; call Acima for more.',
+            'Explain the 90-day same-as-cash option.', 'Complete everything up to Delivery — leave the Delivery checkmark for Kristen.'],
+      docs: ['Acima invoice (Invoice button → scroll to bottom → Print Invoice)', 'Signed copy of sales ticket', 'Copy of driver’s license', 'Posted in #snapandkoalifiacima'] },
+    { id: 'koa', name: 'Koalafi', type: 'lto', phone: '', credit: 'No credit needed', lto: true, min: 300, max: 7500, slack: true,
+      warn: ['NO TAX on Koalafi deals (tax code B).', 'Do NOT hit DELIVER in Koalafi — leave that to Kristen.', 'Koalafi isn’t in the Finance Book yet — ask Kristen if you haven’t done one before.'],
+      app: ['Remove sales tax (tax code B).', 'Needs a checking account; no joint accounts.', 'Autopay is required; explain the 90-day buyout option.', 'Do NOT hit DELIVER.'],
+      docs: ['Signed sales order', 'Koalafi invoice page', 'Copy of driver’s license', 'Posted in #snapandkoalifiacima'] }
+  ];
+
+  var BEFORE = [
+    'Names on the sales order match the finance paperwork exactly (married or not). If they don’t match we lose the deal in a dispute.',
+    'Bill-to is the customer who is financing. Deliver-to can differ but must be documented on the ticket.',
+    'Finance amount entered on the ORIGINAL receipt (not as a payment). Cash/check down payments can go on the original receipt too.',
+    'Credit card down payment? Enter it with Payments after the receipt prints, and have the payment receipt signed.',
+    'Went over every line item with the customer before they signed (finance program, discounts, Pro1st, delivery).',
+    'Delivery or pickup date is filled in (Kristen uses it for the delivery log and to turn financing in on time).',
+    'Right ticket/invoice # on the finance authorization.',
+    'No cross-outs or check marks in place of signatures on the sales order or contract.',
+    'Copy of the customer’s driver’s license (our only proof if fraud comes up).'
+  ];
+
+  var S = { step: 1, ans: {}, co: null, done: {} };
+  var $ = function (id) { return document.getElementById(id); };
+  var root = $('fw');
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function amt() { var v = parseFloat(String($('fw-amt').value).replace(/[$,]/g, '')); return isNaN(v) ? 0 : v; }
+  function money(n) { return '$' + n.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+  function coById(id) { for (var i = 0; i < COS.length; i++) if (COS[i].id === id) return COS[i]; return null; }
+
+  // ---- Step 1: questions
+  function drawQs() {
+    $('fw-qs').innerHTML = QS.map(function (q) {
+      var a = S.ans[q[0]];
+      return '<div class="q"><span>' + esc(q[1]) + '</span><span class="yn">' +
+        '<button type="button" data-q="' + q[0] + '" data-a="y" class="' + (a === 'y' ? 'on' : '') + '">Yes</button>' +
+        '<button type="button" data-q="' + q[0] + '" data-a="n" class="' + (a === 'n' ? 'on' : '') + '">No</button></span></div>';
+    }).join('');
+  }
+
+  function check(c) {
+    var no = [], warn = [], a = S.ans, n = amt();
+    if (a.twelve === 'y' && !c.twelve) warn.push('no 12-month same-as-cash');
+    if (c.noMilitary && a.military === 'y') no.push('no military');
+    if (c.ncva && a.ncva === 'n') no.push('needs NC or VA license');
+    if (c.noBedding && a.bedding === 'y') no.push('bedding must be under 50%');
+    if (c.lto && a.bank === 'n') no.push('needs a qualifying checking account');
+    if (c.lto && a.closing === 'y') no.push('don’t use when closing on a house');
+    if (c.lto && a.email === 'n') no.push('needs an email address');
+    if (n && c.min && n < c.min) no.push('minimum ' + money(c.min));
+    if (n && c.max && n > c.max) warn.push('usual max ' + money(c.max) + ' — may need to call');
+    return { no: no, warn: warn };
+  }
+
+  function drawCos() {
+    var T = { rev: ['Revolving', 't-rev'], ins: ['Installment', 't-ins'], lto: ['Lease-to-own', 't-lto'] };
+    $('fw-cos').innerHTML = COS.map(function (c) {
+      var r = check(c), bad = r.no.length > 0;
+      var why = '<b>Credit:</b> ' + esc(c.credit) + (c.phone ? ' &bull; <b>Phone:</b> ' + esc(c.phone) : '');
+      if (r.no.length) why += '<br><span class="bad">Not a fit: ' + esc(r.no.join('; ')) + '</span>';
+      if (r.warn.length) why += '<br><span class="warn">Heads up: ' + esc(r.warn.join('; ')) + '</span>';
+      return '<div class="co' + (bad ? ' no' : '') + '"><div><b>' + esc(c.name) + '</b><span class="tag ' + T[c.type][1] + '">' + T[c.type][0] + '</span>' +
+        '<div class="why">' + why + '</div></div>' +
+        '<button type="button" class="btn' + (bad ? ' alt' : ' gold') + '" data-pick="' + c.id + '">Use ' + esc(c.name) + '</button></div>';
+    }).join('');
+  }
+
+  // ---- Step 2: checklist
+  function li(key, text) {
+    var d = !!S.done[key];
+    return '<li class="' + (d ? 'done' : '') + '"><input type="checkbox" data-ck="' + key + '"' + (d ? ' checked' : '') + ' /><span>' + esc(text) + '</span></li>';
+  }
+  function allKeys(c) {
+    var k = [];
+    BEFORE.forEach(function (_, i) { k.push('b' + i); });
+    c.app.forEach(function (_, i) { k.push('a' + i); });
+    c.docs.forEach(function (_, i) { k.push('d' + i); });
+    return k;
+  }
+  function drawChecklist() {
+    var c = coById(S.co);
+    if (!c) { $('fw-co-title').textContent = 'Pick a finance company in step 1 first.'; return; }
+    $('fw-co-title').textContent = c.name + ' — step by step';
+    $('fw-co-meta').innerHTML = (c.phone ? '<b>Phone:</b> ' + esc(c.phone) + ' &bull; ' : '') + 'Logins: <b>FINANCE LOGINS</b> quicklink';
+    var w = (c.warn || []).map(function (t) { return '<div class="note alert">' + esc(t) + '</div>'; }).join('');
+    var r = check(c);
+    if (r.no.length) w = '<div class="note alert"><b>This customer may not qualify:</b> ' + esc(r.no.join('; ')) + '</div>' + w;
+    $('fw-co-warn').innerHTML = w;
+    $('fw-ck-before').innerHTML = BEFORE.map(function (t, i) { return li('b' + i, t); }).join('');
+    $('fw-ck-app-title').textContent = c.name + ' application';
+    $('fw-ck-app').innerHTML = c.app.map(function (t, i) { return li('a' + i, t); }).join('');
+    $('fw-ck-docs').innerHTML = c.docs.map(function (t, i) { return li('d' + i, t); }).join('');
+    progress();
+  }
+  function progress() {
+    var c = coById(S.co); if (!c) return;
+    var k = allKeys(c), d = k.filter(function (x) { return S.done[x]; }).length;
+    $('fw-prog').style.width = Math.round(100 * d / k.length) + '%';
+    $('fw-prog-txt').textContent = d + ' of ' + k.length + ' done';
+  }
+
+  // ---- Step 3: email + Slack
+  function v(id) { return String($(id).value || '').trim(); }
+  function fmtDate(s) { if (!s) return ''; var p = s.split('-'); return p[1] + '/' + p[2] + '/' + p[0]; }
+  function drawSend() {
+    var c = coById(S.co);
+    var t = v('fw-ticket'), cu = v('fw-cust'), co = v('fw-coapp'), n = amt(), dt = fmtDate(v('fw-date')), st = v('fw-store'), rep = v('fw-rep');
+    var miss = [];
+    if (!c) miss.push('finance company (step 1)');
+    if (!t) miss.push('ticket #'); if (!cu) miss.push('customer name'); if (!n) miss.push('amount'); if (!dt) miss.push('delivery/pickup date');
+    var open = c ? allKeys(c).filter(function (x) { return !S.done[x]; }).length : 0;
+    var html = '';
+    if (miss.length) html += '<div class="note alert"><b>Missing:</b> ' + esc(miss.join(', ')) + '</div>';
+    if (c && open) html += '<div class="note alert"><b>' + open + ' checklist item' + (open > 1 ? 's' : '') + ' not checked off in step 2.</b> Double-check before sending.</div>';
+    $('fw-missing').innerHTML = html;
+    if (!c) { $('fw-email').value = ''; return; }
+
+    var subject = 'Ticket #' + (t || '____') + ' – ' + c.name + ' – ' + (cu || 'Customer');
+    var docs = c.docs.filter(function (d) { return d.indexOf('#snapandkoalifiacima') < 0; });
+    var body = [
+      'Kristen,', '',
+      'Financing paperwork for ticket #' + (t || '____') + ' is attached.', '',
+      'Finance company: ' + c.name,
+      'Customer: ' + (cu || '') + (co ? '  (co-applicant: ' + co + ')' : ''),
+      'Amount financed: ' + (n ? money(n) : ''),
+      'Delivery/pickup date: ' + dt,
+      'Store: ' + st,
+      'Sales associate: ' + rep, '',
+      'Included:'
+    ].concat(docs.map(function (d, i) { return (S.done['d' + c.docs.indexOf(d)] ? '[x] ' : '[ ] ') + d; }));
+    if (c.slack) body.push('', 'Posted in #snapandkoalifiacima.');
+    body.push('', 'Thanks,', rep);
+    var text = 'Subject: ' + subject + '\n\n' + body.join('\n');
+    $('fw-email').value = text;
+    $('fw-mailto').href = 'mailto:' + KRISTEN + '?cc=' + encodeURIComponent(KATHLEEN) + '&subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body.join('\n'));
+
+    $('fw-slack-card').classList.toggle('hide', !c.slack);
+    if (c.slack) $('fw-slack').value = c.name + ' – Ticket #' + (t || '____') + ' – ' + (cu || '') + ' – ' + (n ? money(n) : '') + ' – ' + (dt ? 'deliver/pickup ' + dt : '') + ' – ' + st + ' – ' + rep;
+
+    $('fw-print').innerHTML = '<h2 style="margin:0 0 6px;">FINANCE FILE – ' + esc(subject) + '</h2><pre style="white-space:pre-wrap;font:13px/1.5 system-ui,Arial,sans-serif;">' + esc(body.join('\n')) + '</pre>';
+  }
+
+  // ---- navigation & events
+  function go(n) {
+    S.step = n;
+    Array.prototype.forEach.call(root.querySelectorAll('section[data-step]'), function (s) { s.classList.toggle('hide', s.getAttribute('data-step') !== String(n)); });
+    Array.prototype.forEach.call(root.querySelectorAll('.steps button'), function (b) { b.classList.toggle('on', b.getAttribute('data-go') === String(n)); });
+    if (n === 2) drawChecklist();
+    if (n === 3) drawSend();
+    root.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  root.addEventListener('click', function (e) {
+    var b = e.target.closest('button, a');
+    if (!b || !root.contains(b)) return;
+    if (b.hasAttribute('data-go')) { go(+b.getAttribute('data-go')); return; }
+    if (b.hasAttribute('data-q')) { var q = b.getAttribute('data-q'), a = b.getAttribute('data-a'); S.ans[q] = S.ans[q] === a ? undefined : a; drawQs(); drawCos(); return; }
+    if (b.hasAttribute('data-pick')) { var id = b.getAttribute('data-pick'); if (S.co !== id) S.done = {}; S.co = id; go(2); return; }
+    if (b.hasAttribute('data-copy')) {
+      var ta = $(b.getAttribute('data-copy')); ta.select();
+      try { (navigator.clipboard ? navigator.clipboard.writeText(ta.value) : Promise.reject()).catch(function () { document.execCommand('copy'); }); } catch (x) { document.execCommand('copy'); }
+      var old = b.textContent; b.textContent = 'Copied!'; setTimeout(function () { b.textContent = old; }, 1200); return;
+    }
+    if (b.id === 'fw-printbtn') { drawSend(); window.print(); return; }
+    if (b.id === 'fw-reset') {
+      if (!confirm('Clear this deal and start over?')) return;
+      ['fw-ticket', 'fw-cust', 'fw-coapp', 'fw-amt', 'fw-date', 'fw-store', 'fw-rep'].forEach(function (id) { $(id).value = ''; });
+      S = { step: 1, ans: {}, co: null, done: {} }; drawQs(); drawCos(); go(1);
+    }
+  });
+  root.addEventListener('change', function (e) {
+    var k = e.target.getAttribute && e.target.getAttribute('data-ck');
+    if (k) { S.done[k] = e.target.checked; e.target.closest('li').classList.toggle('done', e.target.checked); progress(); }
+  });
+  $('fw-amt').addEventListener('input', drawCos);
+
+  drawQs(); drawCos();
+})();
+</script>
